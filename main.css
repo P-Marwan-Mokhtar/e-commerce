@@ -196,7 +196,7 @@ header .search button {
 }
 .first-sec .container {
   display: flex;
-  justify-content: space-between;
+gap: 40px;
 }
 .list {
   width: 300px;
