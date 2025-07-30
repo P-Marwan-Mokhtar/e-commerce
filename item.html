@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="item.css" />
+
+    <title>Topico</title>
+  </head>
+  <body>
+       <div class="cart">
+      <div class="top-cart">
+        <h3>
+          My Cart <span class="count-items">(<span>0</span>Item In Cart)</span>
+        </h3>
+        <i class="fa-regular fa-circle-xmark" onclick="open_cart()"></i>
+      </div>
+      <div class="cart-products"></div>
+      <div class="bottom-cart">
+        <div class="subtotal">
+          <p>Cart subtotal</p>
+          <p class="price-cart-total">$0</p>
+        </div>
+        <a href="checkout.html">
+          <button class="proceed">PROCEED TO CHECKOUT</button></a
+        >
+        <button class="shop-more">SHOP MORE</button>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <a href="index.html"><img src="img/logo-black.png" alt="" /></a>
+
+        <div class="search">
+          <input type="text" placeholder="Search For Products..." />
+          <button>Search</button>
+        </div>
+        <div class="cart-header">
+          <i class="fa-solid fa-bag-shopping" onclick="open_cart()"> </i>
+          <p>My cart:<br />$0</p>
+          <span class="count-cart">0</span>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="container">
+          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+          <ul class="links">
+            <a href="" class="img-botm-head">
+              <img src="img/logo-black.png" alt="" />
+            </a>
+            <i
+              onclick="close_menu()"
+              class="fa-regular fa-circle-xmark btn_close_menu"
+            ></i>
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="products.html">ALL PRODUCTS</a></li>
+            <li><a href=""> ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+          <div class="btns">
+            <a href="login.html" target="_blank"
+              ><button>
+                Login <i class="fa-solid fa-right-to-bracket"></i></button
+            ></a>
+            <a href="signup.html">
+              <button>Sign Up <i class="fa-solid fa-user-plus"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="item-details">
+      <div class="container">
+        <div class="item">
+          <div class="item-imgs">
+            <div class="main-img">
+              <img src="img/product/product-1.jpg" alt="" />
+            </div>
+            <div class="imgs">
+              <img src="img/product/product-1.jpg" alt="" />
+              <img src="img/product/product1.jpg" alt="" />
+              <img src="img/product/product-2.jpg" alt="" />
+              <img src="img/product/product2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="item-text">
+            <h1>Original Mobile Android Dual SIM Smart Phone G3</h1>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="price" >$120.00 <span>$170.00</span></h3>
+            <p>Availability:<span> In Stock</span></p>
+            <p>SKU:<span>Samsung C49J89: £875, Debenhams Plus</span></p>
+            <p class="par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              sapiente nemo, voluptatem iure architecto magnam! Natus blanditiis
+              alias officiis, nam reiciendis provident itaque in odit expedita
+              veritatis quam nesciunt eius illum. Animi nostrum iusto ipsum
+              autem unde. Nihil, quas explicabo! Labore quam maxime quisquam
+              nam, deleniti molestias voluptatum impedit deserunt.
+            </p>
+            <h4>Hurry Up! Only 98 products left in stock.</h4>
+            <button class="add">
+              ADD TO CART<i class="fa-solid fa-cart-arrow-down"></i>
+            </button>
+            <div class="icons">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-sliders"></i>
+              <i class="fa-solid fa-print"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="container">
+        <div class="products-head">
+          <h3>On sale<span>Product</span></h3>
+        </div>
+        <div class="sale_sec mySwiper">
+          <div id="swiper_items_sale2" class="products swiper-wrapper"></div>
+
+          <div class="swiper-button-next btn_Swip"></div>
+          <div class="swiper-button-prev btn_Swip"></div>
+        </div>
+      </div>
+    </div>
+    <button class="to-top">BACK TO TOP</button>
+    <footer>
+      <div class="container">
+        <div class="big-row">
+          <img src="img/logo-white.png" alt="" />
+          <div class="details-num">
+            <i class="fa-solid fa-headset"></i>
+            <div class="num">
+              <span>Hotline Free 24/24:</span>
+              <h3>(+100) 123 456 7890</h3>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            consectetur.
+          </p>
+        </div>
+
+        <div class="links2">
+          <span>FAQs & Help</span>
+          <ul>
+            <a href=""><li>F.A.Q.’s</li></a>
+            <a href=""><li>Ordering Tracking</li></a>
+            <a href=""><li>Contacts Events</li></a>
+            <a href=""><li>Events</li></a>
+            <a href=""><li>Help Center</li></a>
+          </ul>
+        </div>
+        <div class="links2">
+          <span>Shipping & Delivery</span>
+          <ul>
+            <a href=""><li>Delivery Information</li></a>
+            <a href=""><li>Discount</li></a>
+            <a href=""><li>Payment & Shipping</li></a>
+            <a href=""><li>Estimated Delivery</li></a>
+            <a href=""><li>Shipping Guide</li></a>
+          </ul>
+        </div>
+        <div class="links2">
+          <span>Information</span>
+          <ul>
+            <a href=""><li>Popular</li></a>
+            <a href=""><li>Our Services</li></a>
+            <a href=""><li>Your Account</li></a>
+            <a href=""><li>Privacy Policy</li></a>
+            <a href=""><li>Terms & Condition</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <p>Copyright © <span>Topico.</span> all rights reserved</p>
+          <div class="payment">
+            <a href=""><img src="img/payment-1.png" alt="" /></a
+            ><a href=""><img src="img/payment-2.png" alt="" /></a
+            ><a href=""><img src="img/payment-3.png" alt="" /></a
+            ><a href=""><img src="img/payment-4.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+    <script src="js/items_home.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
